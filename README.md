@@ -90,23 +90,6 @@ src/main/resources/
 
 ---
 
-## 📊 API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/signup` | Registration page |
-| POST | `/do-register` | User registration |
-| GET | `/signin` | Login page |
-| GET | `/user/dashboard` | User dashboard |
-| GET | `/user/add-contact` | Add contact form |
-| POST | `/user/process-contact` | Save contact |
-| GET | `/user/show-contacts/{page}` | View contacts (paginated) |
-| GET | `/user/contact/{id}` | Contact details |
-| POST | `/user/update-contact` | Update contact |
-| GET | `/user/delete/{id}` | Delete contact |
-| GET | `/user/search` | Search contacts |
-
----
 
 ## 🎯 Skills Demonstrated
 
