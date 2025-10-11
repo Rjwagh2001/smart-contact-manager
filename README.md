@@ -152,17 +152,4 @@ Deploy easily on:
 
 ---
 
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file
-
----
-
-## 👨‍💻 Author
-
-**Your Name**  
-[GitHub](https://github.com/yourusername) • [LinkedIn](https://linkedin.com/in/yourprofile) • your.email@example.com
-
----
-
 ⭐ **Star this repo if you found it helpful!**
