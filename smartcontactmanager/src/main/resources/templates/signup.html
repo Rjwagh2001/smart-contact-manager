@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
 <head>
-<meta charset="ISO-8859-1">
-<title th:text="${title}">About Page</title>
+    <meta charset="UTF-8">
+    <title th:text="${title}">Signup Page</title>
 </head>
 <body>
-      <section>
-		  <h1>This is Signup Page</h1>
-	  </section>
-      
+
+<section class="d-flex justify-content-center align-items-center" style="height: 90vh;">
+    
+    <div class="card p-4 shadow" style="width: 100%; max-width: 440px;">
+        <h2 class="text-center mb-4">Register Here !!</h2>
+
+        <form action="" th.action="@{/do_register}" method="post">
+            
+            <!-- Name -->
+             <div class="mb-3">
+                <label for="inputName" class="form-label">Your Name </label>
+                <input type="text" 
+                class="form-control" 
+                id="inputName" 
+                placeholder="Write your name here">
+            </div>
+            
+            <!-- Your Email -->
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email address</label>
+                <input type="email" 
+                class="form-control" 
+                id="inputEmail" 
+                placeholder="email@example.com">
+            </div>
+            
+            <!-- Your Password -->
+            <div class="mb-3">
+                <label for="inputPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            
+            <!--  About -->
+		   <!-- About -->
+			<div class="mb-3">
+			    <textarea
+			        class="form-control"
+			        id="inputAbout"
+			        name="about"
+			        placeholder="Enter about yourself"
+			        rows="2"></textarea>
+			</div>  
+			 
+			 
+			 <!-- terms and conditions -->
+			<div class="form-check">
+			    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+			    <label class="form-check-label" for="exampleCheck1">Accept Terms and Conditions</label>
+			  </div>            
+            
+            <div class="container text-center">
+				 <button type="submit" class="btn btn-primary text-white ">Submit</button>
+                 <button type="reset" class="btn btn-secondary text-white ">Reset</button>	
+			</div>
+           
+            
+        </form>
+    </div>
+</section>
+
 </body>
 </html>
